@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\title{Software Engineering - Lecture 3}
+\author{Ossama Edbali}
+
+\begin{document}
+	
+	\maketitle	
+	
+	\section{Testing}	
+	Testing is a very important step in a software process. It allows to:
+	\begin{itemize}
+		\item Prevent bugs before the production and maintenance step
+		\item Check the functionality of the application whether it is working as per requirements
+		\item Making the overall system reliable
+	\end{itemize}
+	
+	Some useful definitions:
+	\begin{description}
+		\item[SUT] System Under Testing
+		\item[DOC] Dependent On Component
+	\end{description}		
+	
+	\subsection*{Levels of testing}
+	There are three levels of testing each distinguished by the components to test and their dependencies.
+	
+	\subsubsection*{Unit testing}	
+	The purpose here is to test single classes or methods in isolation.
+	There are two types of testing:
+	\begin{description}
+		\item[Black box] Choose test data without looking at implementation. Test just I/O
+		\item[Glass/white box] Choose test data with knowledge of implementation.
+		Test the internal logic of the subsystem or object
+	\end{description}
+	
+	\subsubsection*{Integration testing}
+	Tests different parts (modules, classes) of the system working together. It is done, like unit testing,
+	by the developer.	
+	
+	\subsubsection*{End-to-end testing}	
+	Test the whole system including the external resources such as databases, APIs etc\ldots
+	End-to-End testing requires no access to or understanding of the code base.
+	It is carried out by an independent user which is driven by quality rather than delivery (like the
+	developer in unit testing). In this stage the overall system is tested under stress in order to
+	cover the maximum number of edge cases.
+	
+	\subsection*{Process}	
+	The basic steps in testing are:
+	\begin{itemize}
+		\item Choose input data/configuration
+		\item Define the expected outcome
+		\item Run program/method against the input and record the results
+		\item Examine results against the expected outcome
+	\end{itemize}
+	
+	There are different approaches to testing: manual and automated. Manual testing is more tedious and
+	error-prone whereas automated testing is more powerful using a test framework.
+	
+	We are going to use the TestNG (Next Generation) Open source automated testing framework inspired
+	from JUnit but introduces additional features in order to deal with integration and end-to-end testing.
+	(installation and usage in the lecture notes).
+	
+\end{document}
