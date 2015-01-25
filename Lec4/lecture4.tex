@@ -7,11 +7,24 @@
 	
 	\maketitle	
 	
-	\section{Parametrized testing in TestNG}	
-		
+	\section{Parametrised testing in TestNG}	
+	It is often appropriate to test the same method multiple times with different parameters (e.g. prime
+	number checking, celcius to fahrenheit converter etc\ldots).
+	
+	TestNG provides Parameterised tests to more conveniently handle such sets of tests.
+	A Parameterised Test is a normal test method which has a mechanism associated with it for running the same
+	test multiple times with different parameters. The simplest form in TestNG is to specify the test method
+	with
+	an annotation that identifies another method that provides the sets of parameters to use — a DataProvider
+	method.
+	
+	Then the data source is a private (usually) method which is annotated with \textit{DataProvider} and
+	returns an array of object arrays.
 	
 	\section{TDD - Test Driven Development}
+	see module handouts.	
 	
 	\section{Mock objects}
+	see module handouts	
 	
 \end{document}
