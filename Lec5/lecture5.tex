@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\title{Software Engineering - Lecture 5}
+\author{Ossama Edbali}
+
+\begin{document}
+
+	\maketitle
+	
+	\section{System requirements}
+	In the software life cycle activities there are 3 main steps which can be further split:
+	\begin{itemize}
+		\item Requirements
+		\begin{itemize}
+			\item Requirements elicitation/gathering
+			\item Requirements analysis
+		\end{itemize}
+		\item Design
+		\begin{itemize}
+			\item System design
+			\item Detailed design
+		\end{itemize}
+		\item Realization
+		\begin{itemize}
+			\item Implementation
+			\item Testing
+		\end{itemize}
+	\end{itemize}
+	
+	Requirements are the bridges that connects the abstract ideas gathered from the user world and the
+	software-based system. Though, requirements may range from very abstract to detailed statements.
+	
+	Therefore requirements engineering is the process of establishing the services that:
+	\begin{itemize}
+		\item The customer requires from a system
+		\item The constraints under which it operates and is developed
+	\end{itemize}
+	
+	\section{Requirements engineering components}	
+	\begin{itemize}
+		\item Requirements gathering: direct interaction between software engineer and client; the main
+		issues here are $\rightarrow$ what is to be accomplished? How the system will fit into the needs
+		of the business and how the system will be used in a day-to-day basis.
+		\item Requirements analysis: refining and detailing formally the gathered requirements
+		\item Requirements specification: documenting in natural language the requirements process.
+		One might think of it as a special contract between the software engineer/company and the
+		customer(s). \textbf{See template on slides at page 41}.
+	\end{itemize}		
+	
+	Gathering requirements may involve the usage of questionnaires, interviews, task analysis (observing
+	end users in their operational environment) and scenarios.
+	Though, requirements gathering is a difficult task because there may occur problems of scope,
+	understanding and/or volatility.
+	
+	\section{Types of requirements}	
+	\subsection*{Functional requirements}	
+	Describes the functionality/ability of the system and its subsystems (or services).
+	How the system should react to particular inputs?	How the system should behave in particular
+	situations?
+	
+	\subsection*{Non-functional requirements}	
+	These define system properties, behaviour and constraints e.g. reliability, response time and
+	storage requirements. Constraints may be I/O devices, hardware, system representations etc\ldots	
+	
+	Non-functional requirements are grouped in:
+	\begin{itemize}
+		\item Product requirements (related to the product itself)
+		\item Organisational requirements: related to organisational issues such as registration, company
+		policies etc\ldots
+		\item External requirements
+	\end{itemize}		
+	
+	In order to measure the efficiency of the non-functional requirements there are several properties
+	to take into account (see presentation on page 35).	
+	
+	\subsection*{Domain requirements}
+	see lecture notes on page 36.
+	
+	\section{Requirements validation}
+	This part is concerned with validating the requirements and their integrity (we do not accept wrong
+	requirements, i.e. that do not match the wanted system).
+	
+	\begin{itemize}
+		\item Correctness: The requirements represent the client's view
+		\item Completeness: All possible scenarios are described
+		\item Consistency: There are no requirements that contradict each other
+		\item Clarity: One and only one interpretation
+		\item Realism: Implementation and delivery
+		\item Traceability: Each system behaviour can be traced to a set of functional requirements
+	\end{itemize}		
+	
+\end{document}
