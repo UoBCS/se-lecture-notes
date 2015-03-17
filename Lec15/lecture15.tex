@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\title{Software Engineering - Lecture 15}
+\author{Ossama Edbali}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Introduction to extreme programming}
+	The best known agile method is extreme programming. The characteristics of this process are:
+	\begin{itemize}
+		\item \textbf{Cyclic process} - each cycle takes 2 weeks approx.
+		\item Planning and iterations are based on \textbf{user stories}
+		\item \textbf{User stories} form the basis for system requirements.
+		\item \textbf{Whole-team}: all contributors to an XP project are considered as one team
+		\item \textbf{Small releases}: the team releases working software at each iteration. Each release
+		adds functionality on top of the previous release.
+		\item \textbf{Customer tests}: the customer defines one or more automated acceptance tests for a feature.
+		\item \textbf{Simple design}
+		\item \textbf{Refactoring}: see separate lecture
+		\item \textbf{Pair programming}: cooperation leads to better understanding. Better initial approaches
+		and less back-tracking.
+		\item \textbf{TDD}: XP is an incremental development approach, we do not have the detailed requirements and
+		specifications that we would expect to have in a plan-driven approach
+	\end{itemize}
+	
+	\subsection*{Planning}
+	There are 2 types of planning in software development:
+	\begin{itemize}
+		\item \textbf{Release plan}: predict what will be accomplished by the due date
+		\item \textbf{Iteration plan}: determine what tasks to accomplish next
+	\end{itemize}
+	
+	Iteration planning works as follows:
+	\begin{itemize}
+		\item Choose user stories for the current cycle and \textbf{failed acceptance tests} from the previous one 
+		\item Break them into tasks
+		\item Tasks are written on cards by developers
+		\item Developers implement each task separately
+		\item Test and integrate software
+		\item Release software
+		\item Acceptance testing
+	\end{itemize}
+	
+	During the process of planning a task CRCs (Class Responsibility Collaborator) are used to determine
+	how a class should be developed.
+	
+	\subsection*{Why refactoring in XP?}
+	Refactoring is extremely important in XP because there are continuous changes to the code base: this may
+	lead to badly written code. Therefore a solution is to refactor the code to make it cleaner, readable
+	and maintainable.
+		
+\end{document}
